@@ -14,12 +14,20 @@ Java API client for The Internet Chuck Norris Database (http://www.icndb.com/)
 Everyting depend on ICNDBClient client object
 
 ```java
+import net.joningi.icndb.ICNDBClient;
+
+....
+
 final ICNDBClient client = new ICNDBClient();
 ```
 
 ### Get single joke by ID
 
 ```java
+import net.joningi.icndb.Joke;
+
+...
+
 Joke joke = client.getById(15);
 System.out.println(joke.getId() + ": " + joke.getJoke());
 ```
